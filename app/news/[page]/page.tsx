@@ -4,7 +4,7 @@ import fetchData from 'lib/fetch-data'
 export const dynamicParams = true
 
 export async function generateStaticParams() {
-  return [1]
+  return [{ page: '1' }]
 }
 
 export default async function RSCPage({ params }) {
